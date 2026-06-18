@@ -1,4 +1,4 @@
-import { Calculator, Menu, Trees } from "lucide-react";
+import { Calculator, Fence, Menu, Trees } from "lucide-react";
 import { Link, NavLink, Outlet } from "react-router-dom";
 import { cn } from "@/lib/utils";
 
@@ -33,6 +33,14 @@ export function AppShell() {
               }
             >
               <Calculator size={16} /> Gate Calculator
+            </NavLink>
+            <NavLink
+              to="/fence-run-designer"
+              className={({ isActive }) =>
+                cn("flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-semibold", isActive ? "bg-white text-forest-900" : "text-stone-500")
+              }
+            >
+              <Fence size={16} /> Fence Run Designer
             </NavLink>
           </nav>
           <Menu className="text-forest-900 sm:hidden" />
