@@ -16,7 +16,9 @@ const tools = [
   {
     title: "Fence Run Designer",
     description: "Plan post spacing, bays, slopes and panel arrangements.",
-    icon: Fence
+    icon: Fence,
+    href: "/fence-run-designer",
+    active: true
   },
   {
     title: "Material Estimator",
@@ -56,7 +58,7 @@ export function HomePage() {
           return (
             <Card
               key={tool.title}
-              className={tool.active ? "relative overflow-hidden border-forest-100 bg-forest-950 text-white sm:col-span-2 lg:col-span-1" : ""}
+              className={tool.active ? "relative overflow-hidden border-forest-100 bg-forest-950 text-white" : ""}
             >
               <div className="p-6 sm:p-7">
                 <div className={`grid h-12 w-12 place-items-center rounded-2xl ${tool.active ? "bg-white/10 text-timber-400" : "bg-forest-50 text-forest-700"}`}>
