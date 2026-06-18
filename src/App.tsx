@@ -1,9 +1,9 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import { AppShell } from "@/components/AppShell";
 import { GateCalculatorPage } from "@/pages/GateCalculator/GateCalculatorPage";
 import { HomePage } from "@/pages/Home/HomePage";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <AppShell />,
